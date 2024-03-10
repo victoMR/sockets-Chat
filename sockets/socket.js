@@ -21,7 +21,6 @@ function socket(io) {
     socket.on("mensaje", async (mensaje) => {
       var respuesta;
       const mensajeConvertido = mensaje.toLowerCase();
-      const respuestaConvertida = respuesta.toLowerCase();
       switch (mensajeConvertido) {
         case "hola":
           respuesta =
