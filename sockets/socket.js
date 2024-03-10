@@ -117,7 +117,7 @@ function socket(io) {
           const convert = (data.main.temp - 273.15).toFixed(2);
           respuesta = `<span style='color: white;'>La temperatura en México es de ${convert}°C</span>`;
           break;
-        case "Data":
+        case "data":
           // datos de el ordenador osea el cliente
           respuesta = `<span style='color: white;'>${socket.handshake.address}</span>`;
           break; 
